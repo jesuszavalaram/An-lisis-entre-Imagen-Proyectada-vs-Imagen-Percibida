@@ -75,7 +75,7 @@ En Spyder los argumentos se ponen en Ejecutar → Configuración por archivo →
 
 ## Datos
 
-La base `cdmx_unificado.csv` no se incluye en el repositorio porque contiene comentarios descargados de TripAdvisor, Instagram y Reddit. Para ejecutar el programa, coloca el archivo en la misma carpeta que el código o usa cualquier CSV con el formato descrito abajo.
+La base `cdmx_unificado.csv` no se incluye en el repositorio porque contiene comentarios obtenidos de TripAdvisor, Instagram y Reddit. Para ejecutar el programa, coloca el archivo en la misma carpeta que el código o usa cualquier CSV con el formato descrito abajo.
 
 ## Formato del CSV
 
