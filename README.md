@@ -1,6 +1,5 @@
 # Imagen proyectada vs. imagen percibida de la CDMX
 
-Proyecto final de **Visualización de la Información**.
 Autor: Jesús Ignacio Zavala Ramírez
 
 Programa de línea de comandos en Python. Compara la imagen turística que proyecta la DMO (SECTUR) con la que perciben los usuarios en TripAdvisor, Instagram y Reddit. Funciona sin internet y sin APIs una vez instaladas las dependencias. Al terminar genera un reporte HTML interactivo.
