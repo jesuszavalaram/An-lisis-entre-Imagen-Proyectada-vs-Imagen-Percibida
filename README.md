@@ -24,7 +24,7 @@ Todos los archivos deben estar en la misma carpeta. Solo se ejecuta `analisis_dm
 
 ## Instalación
 
-Se usa Python 3.10 o superior.
+Se usa Python 3.13.13.
 
 ```
 pip install -r requirements.txt
@@ -88,4 +88,17 @@ La base `cdmx_unificado.csv` no se incluye en el repositorio porque contiene com
 
 - Resumen en consola: datos, outliers, sentimiento, tópicos, alineación y precio.
 - `resultados/reporte.html`: reporte interactivo con las secciones Datos iniciales, Comentarios analizados, Índices, Resultados, Precio, valor y costo y Metodología. Se abre solo al terminar.
-- `resultados/graficas/`: cada
+- `resultados/graficas/`: cada gráfica interactiva en su propio HTML.
+- Ventanas de matplotlib con las gráficas de los avances.
+
+## Métodos
+
+| Etapa | Método |
+|---|---|
+| Limpieza | Minúsculas, sin enlaces, menciones ni acentos; stopwords de NLTK; stemming Snowball |
+| Representación | TF-IDF reducido con LSA (TruncatedSVD) |
+| Outliers | Isolation Forest por fuente |
+| Sentimiento | pysentimiento (RoBERTuito para español, BERTweet para inglés); polaridad = P(positivo) − P(negativo) |
+| Tópicos | NMF por sentimiento |
+| Comparación | Proporción de tópicos por fuente, similitud coseno e índice de alineación |
+| Precio | Similitud coseno con un vector del concepto precio/valor/costo |
